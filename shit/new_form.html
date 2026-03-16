@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FabLab Interview Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 6px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>FabLab Interview Registration</h2>
+
+        <form>
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="9876543210" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Engineering Branch</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="branch" value="mechanical" required> Mechanical</label>
+                    <label><input type="radio" name="branch" value="computer"> Computer</label>
+                    <label><input type="radio" name="branch" value="electrical"> Electrical</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Select Year</label>
+                <select id="year" name="year" required>
+                    <option value="">Select Year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Interested Courses</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="course" value="3dprinting"> 3D Printing</label><br>
+                    <label><input type="checkbox" name="course" value="laser"> Laser Cutting</label><br>
+                    <label><input type="checkbox" name="course" value="Web Dev"> Web development</label><br>
+                    <label><input type="checkbox" name="course" value="Java"> java</label><br>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="interview_date">Interview Date</label>
+                <input type="date" id="interview_date" name="interview_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="session_day">Preferred FabLab Session Day</label>
+                <input type="week" id="session_day" name="session_day">
+            </div>
+
+            <div class="form-group">
+                <label for="interest">Interest Level in FabLab</label>
+                <input type="range" id="interest" name="interest" min="1" max="10" value="5">
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Why do you want to join FabLab?</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

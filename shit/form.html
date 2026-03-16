@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>practical 3</title>
+</head>
+
+<body>
+    <header style="text-align: center;">
+        <h1 style="font-size: 50px;">
+            <span style="color: aliceblue;"> APPLICATION FORM</span>
+        </h1>
+    </header>
+    <div class="div">
+        <form action="h.jpeg" style="text-align: center;">
+            <label for="fn" style="font-size: 39px; text-align: center; color: black;">
+                name :
+            </label>
+            <input placeholder="Enter your name..." required type="text" id="fn" name="name :" style="font-size: 38px;">
+            <br><br>
+            <label for="mail">
+                Email :
+            </label>
+            <input style="font-size: 39px; text-align: center; color: black;" type="email" id="mail" required
+                placeholder="example@outlook.com" minlength="8"><br><br>
+            <label for="number" style="font-size: 39px; text-align: center; color: black;">Phone no.</label>
+            <input style="font-size: 39px; text-align: center; color: black;" id="number" value="number" type="number"
+                required placeholder="Enter your number..." pattern="[0-9]{10}">
+            <br><br><label for="age" style="font-size: 40px;">
+                age :
+            </label>
+            <input placeholder="Enter your age...." type="number" id="age" style="font-size: 28px;"><br><br>
+            <label for="pass" style="font-size: 39px; text-align: center; color: black;">
+                Password
+                <input type="password" id="pass" name="password" required><br><br>
+            </label>
+            <label for="gender" style="font-size: 39px; text-align: center; color: black; color: rgb(0, 0, 0);">
+                Gender :
+            </label>
+
+
+            <label for="Male" style="font-size: 40px;">
+                Male
+            </label>
+            <input type="radio" value="Male" name="gender" style="font-size: 49px" ;>
+            <label for="female" style="font-size: 40px;">
+                female
+            </label>
+            <input type="radio" value="female" name="gender" style="font-size: 40px;"><br><br>
+            <label for="hobbies" style="font-size: 40px;">
+                Hobbies :
+            </label>
+
+            <label for="Gaming" style="font-size: 37px;">
+                Gaming
+            </label>
+            <input type="checkbox" value="Gaming" name="hobbies">
+            <label for="Sports" style="font-size: 37px;">
+                Sports
+            </label>
+            <input type="checkbox" value="Sports" name="hobbies">
+            <br><br><label for="dob" style="font-size: 39px;">
+                Date of birth
+            </label>
+            <input type="date" value="dob" name="dob" style="font-size: xx-large;"><br><br>
+
+            <label for="course" style="font-size: 39px">Choose your course</label>
+            <input list="course" id="" name="course" placeholder="Select or type..." style="font-size: 27px;">
+
+            <datalist id="course">
+                <option value="B.Erozgar">
+                <option value="B.Tech">
+                <option value="MBA">
+                <option value="BCA">
+            </datalist><br> <br>
+            <label for="Range" style="font-size: 39px"> completion of the course:</label>
+            <input type="range" id="Range" style="font-size: 32px;"><br><br>
+            <label for="upload" style="font-size: 39px; text-align: center;">
+                reciept :
+            </label>
+            <input type="file" id="upload" style="font-size: xx-large;">
+            <br><br><br><br><input type="submit" value="submit"
+                style="font-size: 39px; color: rgb(0, 0, 0);text-align: center;">
+            <input type="reset" style="font-size: 39px; text-align: center;">
+
+
+        </form>
+    </div>
+</body>
+
+</html>

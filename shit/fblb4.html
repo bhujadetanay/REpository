@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <title>CSS</title>
+    <style>
+        .sidebar {
+            position: fixed;
+            background-color: rgb(32, 32, 32);
+            height: 100%;
+            width: 30%;
+            left: 0px;
+            margin: 2px;
+            border-radius: 15px;
+            box-shadow: 0px 20px 20px;
+
+        }
+        .search_icon
+        {
+
+        }
+
+        body {
+            background-color: rgb(36, 36, 36);
+        }
+
+        nav {
+            height: 80px;
+            width: 65%;
+            position: fixed;
+            left: 500px;
+            box-shadow: 0px 20px 20px;
+            font-family: "Science Gothic", sans-serif;
+            color: black;
+        
+            transition: all ease-in-out  0.3s;
+            background-color: rgb(229, 65, 65);
+            opacity: 0.9;
+
+            border-radius: 30px;
+        }
+        nav:hover
+        {
+            height: 80px;
+            width: 65%;
+            position: fixed;
+            left: 500px;
+            box-shadow: 0px 20px 20px rgb(26, 26, 26);
+            font-family: "Science Gothic", sans-serif;
+            color: black;
+            background-color: rgb(229, 65, 65);
+            opacity: 0.9;
+
+            border-radius: 30px; 
+        }
+
+        .home {
+            position: relative;
+            left: 30px;
+            top: 10px;
+            font-size: 40px;
+            font-weight: 900;
+
+        }
+
+        .home:hover {
+            transform: scale(1.1);
+            transition: all ease-in-out 0.2s;
+            text-shadow: 20px 20px 20px;
+        }
+
+        .search {
+            position: fixed;
+            left: 600px;
+            top: 17px;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.6;
+            transition: all ease-in-out 0.34s;
+            border-radius: 30px;
+            height: 60px;
+            box-shadow: 15px 9px 20px;
+            width: 50%;
+        }
+        .search:hover{
+            position: fixed;
+            left: 600px;
+            top: 17px;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.7;
+            border-radius: 30px;
+            height: 60px;
+            box-shadow: 15px 12px 20px rgb(11, 11, 11);
+            width: 50%;
+        }
+        .iframe
+        {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: 10px;
+            position: relative;
+        }
+        .music
+        {
+            position: relative;
+            left: 230px;
+            border-color: black;
+            top: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+
+
+    </div>
+    <nav>
+        <div class="home"></div>
+        <div class="search">
+            <div class="search_icon"></div>
+        </div>
+    </nav>
+    <div class="iframe"> 
+        <iframe class="music" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="1" height="250" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/mind-games-single/1861717652"></iframe>
+    </div>
+</body>
+
+</html>
